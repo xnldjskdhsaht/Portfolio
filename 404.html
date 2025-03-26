@@ -6,8 +6,10 @@
     <title>404 - Page Not Found</title>
     <script type="text/javascript">
         var path = window.location.pathname;
+        
         if (!path.includes('/index.html') && path !== "/") {
-            window.location.replace('/index.html' + path);
+            // 리디렉션 없이 URL 유지한 채 새로고침
+            window.location.reload();
         }
     </script>
 </head>
